@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Talan Cantine</string>
+    <string name="cr_ation_de_plat">Création de plat</string>
+    <string name="selected_item1">Selected item:</string>
+    <string-array name="categories">
+        <item>Entrée</item>
+        <item>Plat principal</item>
+        <item>Dessert</item>
+    </string-array>
+    <string-array name="types_entrees">
+        <item>Entrée1</item>
+        <item>Entrée2</item>
+        <item>Entrée3</item>
+    </string-array>
+    <string name="slogan">Good food = Good Mood</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
