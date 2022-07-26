@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ThirdActivity">
+    tools:context="FragmentAdmin.ThirdFragment">
 
     <TextView
         android:layout_width="match_parent"
@@ -39,7 +39,10 @@
             android:id="@+id/txt_view_date_picked"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
             android:drawableRight="@drawable/ic_calendar"
             android:drawablePadding="50dp"
             android:editable="false"
