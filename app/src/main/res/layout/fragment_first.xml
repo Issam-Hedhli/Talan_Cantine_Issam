@@ -131,6 +131,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:background="@drawable/round_primary"
             android:layout_weight="0"
             android:text="Ajouter"
             android:textStyle="bold" />
@@ -149,6 +150,7 @@
             android:layout_gravity="center"
             android:layout_weight="0"
             android:text="Valider"
+            android:background="@drawable/round_primary"
             android:textStyle="bold" />
 
 

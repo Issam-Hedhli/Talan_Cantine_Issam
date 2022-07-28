@@ -1,7 +1,9 @@
 package com.example.talancantine.FragmentAdmin
 
 import android.content.Intent
+import android.graphics.ImageDecoder
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.LayoutInflater
@@ -79,7 +81,10 @@ class FirstFragment : Fragment() {
             if (resultCode == AppCompatActivity.RESULT_OK && requestCode == pickImage) {
                 imageUri = data?.data
                 imageView.setImageURI(imageUri)
-            }}
+                }
+
+
+        }
 
 
 

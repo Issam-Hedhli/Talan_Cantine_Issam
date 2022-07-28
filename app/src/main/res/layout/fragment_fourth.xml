@@ -149,6 +149,7 @@
             android:layout_weight="0"
             android:gravity="center"
             android:text="Valider"
+            android:background="@drawable/round_primary"
             android:textStyle="bold" />
     </LinearLayout>
 
