@@ -15,7 +15,6 @@ import java.util.*
 class ThirdFragment : Fragment() {
     var formatDate = SimpleDateFormat("dd MMMM YYYY", Locale.US)
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

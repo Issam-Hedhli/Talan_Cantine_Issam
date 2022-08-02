@@ -6,21 +6,41 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import android.widget.Toast
 import com.example.talancantine.R
+import com.example.talancantine.databinding.FragmentSecondBinding
 import kotlinx.android.synthetic.main.fragment_fourth.*
 import java.text.SimpleDateFormat
 import java.util.*
 
 class FourthFragment : Fragment() {
+    private var formatDate= SimpleDateFormat("dd MMMM YYYY", Locale.US)
+    private var _binding: FragmentSecondBinding? = null
+    private val binding get() = _binding!!
 
-    var formatDate= SimpleDateFormat("dd MMMM YYYY",Locale.US)
+    override fun onResume() {
+        super.onResume()
+        val types_entree = resources.getStringArray(R.array.types_entrees)
+        val arrayAdapter1 = ArrayAdapter(requireContext(),R.layout.list_items,types_entree)
+        binding.dropdownFieldEntree.setAdapter(arrayAdapter1)
+        val types_principal = resources.getStringArray(R.array.types_principal)
+        val arrayAdapter2 = ArrayAdapter(requireContext(),R.layout.list_items,types_principal)
+        binding.dropdownFieldPlat.setAdapter(arrayAdapter2)
+        val types_dessert = resources.getStringArray(R.array.types_desserts)
+        val arrayAdapter3 = ArrayAdapter(requireContext(),R.layout.list_items,types_dessert)
+        binding.dropdownFieldDessert.setAdapter(arrayAdapter3)
+
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fourth, container, false)
+        _binding= FragmentSecondBinding.inflate(inflater,container,false)
+
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

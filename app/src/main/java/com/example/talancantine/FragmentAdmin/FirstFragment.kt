@@ -1,9 +1,7 @@
 package com.example.talancantine.FragmentAdmin
 
 import android.content.Intent
-import android.graphics.ImageDecoder
 import android.net.Uri
-import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.LayoutInflater
@@ -21,16 +19,38 @@ class FirstFragment : Fragment() {
     private val pickImage = 100
     private var imageUri: Uri? = null
 
+    override fun onResume() {
+        super.onResume()
+        imageView = requireView().findViewById(R.id.imagePlat)
+        button = requireView().findViewById(R.id.buttonAjouter)
+        button.setOnClickListener {
+
+            val gallery = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
+            startActivityForResult(gallery, pickImage)
+
+        }
+        fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+            super.onActivityResult(requestCode, resultCode, data)
+            if (resultCode == AppCompatActivity.RESULT_OK && requestCode == pickImage) {
+                imageUri = data?.data
+                imageView.setImageURI(imageUri)
+            }
+
+
+        }
+
+
+    }
+
 
     override fun onCreateView(
 
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         // Inflate the layout for this fragment
-        var view: View = inflater.inflate(R.layout.fragment_first, container, false)
-        return view}
+        return inflater.inflate(R.layout.fragment_first, container, false)
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -67,24 +87,7 @@ class FirstFragment : Fragment() {
         }
 
 
-        // selectionner une image de la gallerie
 
-        imageView = view.findViewById(R.id.imagePlat)
-        button = view.findViewById(R.id.buttonAjouter)
-        button.setOnClickListener {
-            val gallery = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
-            startActivityForResult(gallery, pickImage)
-        }
-
-        fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-            super.onActivityResult(requestCode, resultCode, data)
-            if (resultCode == AppCompatActivity.RESULT_OK && requestCode == pickImage) {
-                imageUri = data?.data
-                imageView.setImageURI(imageUri)
-                }
-
-
-        }
 
 
 

@@ -9,6 +9,7 @@
 
     <TextView
         android:layout_width="match_parent"
+        android:fontFamily="monospace"
         android:layout_height="62dp"
         android:background="#CECECE"
         android:backgroundTint="#F2F2F2"
@@ -31,6 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:fontFamily="monospace"
             android:text="Choisir la date du menu"
             android:textColor="@color/purple_500"
             android:backgroundTint="@color/white"/>
@@ -67,6 +69,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:drawablePadding="30dp"
+            android:fontFamily="monospace"
             android:gravity="center"
             android:includeFontPadding="false"
             android:padding="20dp"
@@ -88,17 +91,20 @@
             android:layout_height="wrap_content"
             android:hint="Choisir les entrées"
             android:textColor="@color/black"
+            android:fontFamily="monospace"
+
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="30dp"
             app:helperText="required"
             app:helperTextTextColor="@android:color/holo_red_dark"
-
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
             <AutoCompleteTextView
                 android:id="@+id/dropdown_field_entree"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="monospace"
+
                 android:inputType="none" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -108,6 +114,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Choisir les plats"
+            android:fontFamily="monospace"
+
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="30dp"
             app:helperText="required"
@@ -116,9 +124,10 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
             <AutoCompleteTextView
-                android:id="@+id/autoCompleteTextView"
+                android:id="@+id/dropdown_field_plat"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:layout_height="match_parent"
                 android:inputType="none" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -127,6 +136,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Choisir les desserts"
+            android:fontFamily="monospace"
+
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="30dp"
             app:helperText="required"
@@ -137,7 +148,9 @@
             <AutoCompleteTextView
                 android:id="@+id/dropdown_field_dessert"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="monospace"
+
                 android:inputType="none" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -154,6 +167,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:fontFamily="monospace"
             android:background="@drawable/round_primary"
             android:layout_weight="0"
             android:gravity="center"
