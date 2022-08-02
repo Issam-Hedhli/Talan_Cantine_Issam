@@ -114,7 +114,6 @@
             android:layout_height="40dp"
             android:text="Add"
             android:fontFamily="monospace"
-
             android:layout_marginTop="10dp"
             android:layout_marginLeft="15dp"
             android:textColor="@color/white"
@@ -123,6 +122,150 @@
             android:paddingRight="10dp"
             android:drawableRight="@drawable/ic_add"
             ></Button>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_margin="40dp">
+
+            <TableRow
+                android:background="@color/purple_200">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Entrée"
+                    android:textColor="@android:color/white"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="63dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="Plat Principal"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dessert"
+                    android:textColor="@android:color/white"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    />
+
+
+            </TableRow>
+
+            <!-- Table Data -->
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:inputType="text"
+                    android:text="@string/Plat1"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/Plat2"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Plat3"
+                    android:padding="10sp"
+                    android:textSize="12sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    />
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Plat1"
+                    android:padding="10sp"
+                    android:textSize="12sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/Plat2"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Plat3"
+                    android:padding="10sp"
+                    android:textSize="12sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    />
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Plat1"
+                    android:padding="10sp"
+                    android:textSize="12sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:layout_width="81dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/Plat2"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Plat3"
+                    android:padding="10sp"
+                    android:textSize="12sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+
 
         <Button
             android:id="@+id/button_submit_list"
