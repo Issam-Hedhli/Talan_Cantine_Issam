@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/firstFragmentUser"
+        android:title="Commander"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/secondFragmentUser"
+        android:title="Panier"
+        android:icon="@drawable/ic_food_cart"/>
+    <item
+        android:id="@+id/thirdFragmentUser"
+        android:title="Favoris"
+        android:icon="@drawable/ic_favorite"/>
+    <item
+        android:id="@+id/fourthFragmentUser"
+        android:title="Compte"
+        android:icon="@drawable/ic_person"/>
+
+</menu>

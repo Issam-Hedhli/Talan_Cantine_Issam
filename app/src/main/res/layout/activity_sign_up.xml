@@ -30,13 +30,13 @@
         android:layout_below="@id/sign_up"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:fontFamily="monospace"
-
         android:layout_marginEnd="10dp"
+
         android:layout_marginBottom="10dp"
         android:background="#30ffffff"
-        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawableLeft="@drawable/ic_person"
         android:drawablePadding="20dp"
+        android:fontFamily="monospace"
         android:hint="Username"
         android:padding="20dp"
         android:textColor="@color/white"
@@ -50,12 +50,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="237dp"
-        android:fontFamily="monospace"
-
         android:layout_marginEnd="10dp"
+
         android:background="#30ffffff"
-        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawableLeft="@drawable/ic_person"
         android:drawablePadding="20dp"
+        android:fontFamily="monospace"
         android:hint="user@talan.com"
         android:inputType="textEmailAddress"
         android:padding="20dp"

@@ -38,12 +38,13 @@ class SignInActivity : AppCompatActivity() {
 
                 if(username.text.toString()=="admin" && password.text.toString()=="admin"){
                     //correct
-                    Toast.makeText(this,"LOGIN SUCCESSFUL", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this,"LOGIN SUCCESSFUL ADMIN", Toast.LENGTH_SHORT).show()
                     startActivity(Intent(this,AdminInterface::class.java))
                     }
                 else
                     //incorrect
-                    Toast.makeText(this,"LOGIN FAILED !!!",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this,"LOGIN SUCCESSFUL USER",Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this,MainActivity::class.java))
             }
     }
 
