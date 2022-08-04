@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F6F6F9"
-    tools:context=".MainActivity">
+    tools:context=".FirstFragmentUser">
 
     <ImageView
         android:id="@+id/food_menu"
@@ -26,7 +26,7 @@
         android:layout_height="59dp"
 
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:layout_weight="1"
         android:src="@mipmap/ic_launcher"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,19 +34,20 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
+
     <ImageView
         android:id="@+id/food_cart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="16dp"
         android:contentDescription="@string/app_name"
         android:padding="5dp"
         android:src="@drawable/ic_food_cart"
         app:layout_constraintBottom_toBottomOf="@+id/food_menu"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/food_menu" />
-
+        app:layout_constraintTop_toTopOf="@+id/food_menu"
+        app:layout_constraintVertical_bias="0.727" />
 
     <ImageView
         android:id="@+id/food_title"
@@ -58,49 +59,61 @@
         app:layout_constraintStart_toStartOf="@+id/food_menu"
         app:layout_constraintTop_toBottomOf="@+id/food_menu" />
 
-    <TextView
-        android:id="@+id/food_search"
-        android:layout_width="314dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="383dp"
+        android:layout_height="57dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rectangle_background"
-        android:backgroundTint="#EFEEEE"
-        android:drawablePadding="16dp"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@android:color/transparent"
+        android:queryHint="Search ..."
         android:fontFamily="monospace"
         android:gravity="center_vertical"
-        android:padding="10dp"
-        android:text="Search..."
-        android:textColor="@color/purple_200"
-        android:textSize="17sp"
-        app:drawableStartCompat="@drawable/ic_food_search"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/food_title" />
+
+    <ListView
+        android:id="@+id/menuList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        app:layout_constraintVertical_bias="0.424"
+        />
 
     <TextView
         android:id="@+id/categories"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:text="Categories"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/food_search"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="404dp"
         android:layout_height="177dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/Popular"
@@ -117,14 +130,12 @@
         tools:textSize="22sp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="385dp"
-        android:layout_height="181dp"
+        android:layout_width="404dp"
+        android:layout_height="184dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Popular" />
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

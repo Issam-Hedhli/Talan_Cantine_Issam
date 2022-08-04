@@ -2,27 +2,50 @@ package com.example.talancantine
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.talancantine.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationMenuView
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
+    private val homefragment = FirstFragmentUser()
+    private val panierfragment= SecondFragmentUser()
+    private val favorisfragment= ThirdFragmentUser()
+    private val profilefragment= FourthFragmentUser()
+    private lateinit var binding : ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding= ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        replaceFragment(homefragment)
 
-        val bottomNavigationView = findViewById<BottomNavigationMenuView>(R.id.bottomNavigationView)
-        val navController =findNavController(R.id.fragment)
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(R.id.firstFragmentUser,R.id.secondFragmentUser,R.id.thirdFragmentUser,R.id.fourthFragmentUser))
+        bottomNavigationView.setOnNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.firstFragmentUser ->replaceFragment(homefragment)
+                R.id.secondFragmentUser ->replaceFragment(panierfragment)
+                R.id.thirdFragmentUser ->replaceFragment(favorisfragment)
+                R.id.fourthFragmentUser ->replaceFragment(profilefragment)
 
-         setupActionBarWithNavController(navController,appBarConfiguration)
 
-
-        binding.bottomNavigationView.setupWithNavController(navController)
+            }
+            true
         }
+
+
+        }
+
+    private fun replaceFragment(fragment: Fragment) {
+        if(fragment!=null){
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_layout,fragment)
+            transaction.commit()
+        }
+
     }
+}
