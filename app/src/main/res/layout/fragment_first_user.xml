@@ -8,6 +8,8 @@
     android:background="#F6F6F9"
     tools:context=".FirstFragmentUser">
 
+
+
     <ImageView
         android:id="@+id/food_menu"
         android:layout_width="25dp"
@@ -20,22 +22,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <ImageView
-        android:id="@+id/imagePlat"
-        android:layout_width="81dp"
-        android:layout_height="59dp"
+        <ImageView
+            android:id="@+id/imagePlat"
+            android:layout_width="81dp"
+            android:layout_height="59dp"
 
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="4dp"
-        android:layout_weight="1"
-        android:src="@mipmap/ic_launcher"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
 
-
-    <ImageView
+        <ImageView
         android:id="@+id/food_cart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -68,27 +69,14 @@
         android:background="@drawable/rectangle_background"
         android:iconifiedByDefault="false"
         android:queryBackground="@android:color/transparent"
-        android:queryHint="Search ..."
+        android:queryHint="Search for recipes"
         android:fontFamily="monospace"
         android:gravity="center_vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/food_title" />
 
-    <ListView
-        android:id="@+id/menuList"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:visibility="gone"
-        app:layout_constraintVertical_bias="0.424"
-        />
+
 
     <TextView
         android:id="@+id/categories"
@@ -104,15 +92,14 @@
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="404dp"
-        android:layout_height="177dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/rv_main_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/categories"
+        tools:itemCount="2"
+        />
 
 
     <TextView
@@ -125,17 +112,18 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/rv_main_category"
         tools:ignore="MissingConstraints"
         tools:textSize="22sp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="404dp"
-        android:layout_height="184dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.272"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Popular" />
+        android:id="@+id/rv_sub_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Popular"
+        tools:itemCount="2"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
