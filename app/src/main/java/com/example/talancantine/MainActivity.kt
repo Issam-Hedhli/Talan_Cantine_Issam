@@ -1,14 +1,10 @@
 package com.example.talancantine
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
 import com.example.talancantine.databinding.ActivityMainBinding
-import com.google.android.material.bottomnavigation.BottomNavigationMenuView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +20,9 @@ class MainActivity : AppCompatActivity() {
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         replaceFragment(homefragment)
+
+
+
 
         bottomNavigationView.setOnNavigationItemSelectedListener {
             when(it.itemId){
@@ -41,11 +40,12 @@ class MainActivity : AppCompatActivity() {
         }
 
     private fun replaceFragment(fragment: Fragment) {
-        if(fragment!=null){
+        if (fragment != null) {
             val transaction = supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.frame_layout,fragment)
+            transaction.replace(R.id.frame_layout, fragment)
             transaction.commit()
         }
 
     }
-}
+
+    }
