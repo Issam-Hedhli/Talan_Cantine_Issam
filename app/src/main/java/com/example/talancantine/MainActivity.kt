@@ -4,8 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.talancantine.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_first_user.*
 
 class MainActivity : AppCompatActivity() {
     private val homefragment = FirstFragmentUser()
@@ -14,12 +17,16 @@ class MainActivity : AppCompatActivity() {
     private val profilefragment= FourthFragmentUser()
     private lateinit var binding : ActivityMainBinding
 
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         replaceFragment(homefragment)
+
 
 
 
