@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:orientation="vertical"
-    android:layout_height="wrap_content"
-    tools:context=".FirstFragmentUser">
 
-
-    <androidx.cardview.widget.CardView
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".FirstFragmentUser"
         android:id="@id/cv_main_category"
         android:layout_width="376dp"
         android:layout_height="154dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
         android:background="@color/grey"
+
         android:orientation="vertical"
         app:cardCornerRadius="10dp"
         app:cardElevation="5dp"
@@ -32,12 +30,23 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tv_title_menu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
                     android:text="Food Menu1"
                     android:textColor="@color/purple_500"
                     android:textSize="24dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_favorite_border"
+                    android:layout_gravity="right"
+                    />
+
+
+
 
 
                 <LinearLayout
@@ -89,6 +98,7 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/tv_time_menu"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -113,11 +123,12 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/tv_prize_menu"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="monospace"
-                            android:text="15 Dt"
+                            android:text="15 D"
                             android:textColor="@color/black"
                             android:textSize="20dp" />
 
@@ -129,36 +140,31 @@
 
 
             </LinearLayout>
-
+        </LinearLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="115dp"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_food_menu"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
                     android:layout_alignParentRight="true"
-                    android:layout_marginTop="-8dp"
-                    android:layout_marginRight="2dp"
-                    android:src="@drawable/food2" />
+                    android:background="@color/purple_200"
+                    android:src="@drawable/pasta" />
             </RelativeLayout>
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-        </LinearLayout>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_add_shopping_cart_white_24px"
-            android:translationY="120dp">
 
-        </ImageView>
+    <ImageView
+        android:layout_width="226dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_add_shopping_cart_white_24px"
+        android:translationY="120dp">
+
+    </ImageView>
 
 
     </androidx.cardview.widget.CardView>
 
-</LinearLayout>

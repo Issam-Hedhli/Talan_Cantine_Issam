@@ -1,4 +1,4 @@
-package com.example.talancantine
+package com.example.talancantine.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -9,14 +9,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.talancantine.R
 import kotlinx.android.synthetic.main.list_items.view.*
 
-class RecyclerAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class RecyclerAdapterCategory:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-    private var titles= arrayListOf("HAMBURGER","HAMBURGER","HAMBURGER","HAMBURGER")
-    private var images= intArrayOf(R.drawable.food1,R.drawable.food1,R.drawable.food1,R.drawable.food1)
+    private var titles= arrayListOf("PIZZA","BURGER","SANDWICH","DRINKS ")
+    private var images= intArrayOf(R.drawable.pizza,R.drawable.burger,R.drawable.sandwich,R.drawable.drink)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        val v = LayoutInflater.from(parent.context).inflate(R.layout.item_rv_main_category,parent,false)
-        return ViewHolder(v)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_rv_main_category,parent,false)
+        return ViewHolder(view)
     }
 
     override fun getItemCount(): Int {
