@@ -11,6 +11,7 @@ import com.example.talancantine.adapter.RecyclerAdapterCategory
 import com.example.talancantine.adapter.RecyclerAdapterMenus
 import com.example.talancantine.databinding.FragmentFirstUserBinding
 import kotlinx.android.synthetic.main.fragment_first_user.*
+import kotlinx.android.synthetic.main.item_rv_main_menus.*
 
 
 class FirstFragmentUser : Fragment() {
@@ -22,6 +23,7 @@ class FirstFragmentUser : Fragment() {
 
     private var adapterMenus:RecyclerAdapterMenus?=null
     private var linearLayoutManagerMenus:RecyclerView.LayoutManager?=null
+
 
 
     override fun onCreateView(
@@ -50,6 +52,7 @@ class FirstFragmentUser : Fragment() {
 
         adapterMenus= RecyclerAdapterMenus()
         rv_main_menus.adapter=adapterMenus
+
 
 
     }

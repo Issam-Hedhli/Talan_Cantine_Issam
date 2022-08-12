@@ -6,22 +6,28 @@
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_add.xml" value="0.16203703703703703" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_add_shopping_cart_white_24px.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_baseline_visibility_off_24.xml" value="0.13796296296296295" />
+        <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_chat.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_check_circle_black_24px.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_close.xml" value="0.16203703703703703" />
+        <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_exit.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_favorite.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_favorite_border.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_food__cart.xml" value="0.18796296296296297" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_food_cart.xml" value="0.18796296296296297" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_food_menu.xml" value="0.18796296296296297" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_food_search.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_history.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_more_vert_black_48px.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_person.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_settings.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/ic_show_favorite.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/rectangle_background.xml" value="0.18796296296296297" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/round_grey.xml" value="0.16203703703703703" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/round_primary.xml" value="0.16203703703703703" />
+        <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/selector_love.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/drawable/unkown.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/layout/activity_cricketers.xml" value="0.1" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/layout/activity_detail.xml" value="0.20416666666666666" />
@@ -38,14 +44,14 @@
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/layout/fragment_first.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/layout/fragment_first_user.xml" value="0.2" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/layout/fragment_fourth.xml" value="0.22" />
-        <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/layout/fragment_fourth_user.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/layout/fragment_fourth_user.xml" value="0.21" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/layout/fragment_image.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/layout/fragment_second.xml" value="0.18" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/layout/fragment_second_user.xml" value="0.22" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/layout/fragment_third.xml" value="0.33" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/layout/fragment_third_user.xml" value="0.18" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/layout/item_rv_main_category.xml" value="0.18" />
-        <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/layout/item_rv_main_menus.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/layout/item_rv_main_menus.xml" value="0.33" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/layout/item_rv_sub_category.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/layout/iv_main_category.xml" value="0.1" />
         <entry key="..\:/Users/HP/Desktop/Talan-Cantine-master/app/src/main/res/layout/list_items.xml" value="0.20416666666666666" />

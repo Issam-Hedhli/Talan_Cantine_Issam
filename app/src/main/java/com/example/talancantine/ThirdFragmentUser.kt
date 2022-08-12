@@ -1,21 +1,30 @@
 package com.example.talancantine
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.RecyclerView
+import com.example.talancantine.adapter.RecyclerAdapterMenus
+import com.example.talancantine.databinding.FragmentThirdUserBinding
 
 
 class ThirdFragmentUser : Fragment() {
 
-
+    private var _binding: FragmentThirdUserBinding? = null
+    private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_third_user, container, false)
+        _binding = FragmentThirdUserBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
+
+
 }
+
+
