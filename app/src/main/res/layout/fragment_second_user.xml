@@ -3,15 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondFragmentUser">
+    tools:context=".FragmentUser.SecondFragmentUser">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/second_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="hello_sec_fragment"
-        android:textColor="@color/black"
-        android:textSize="28dp"/>
+
 
 </FrameLayout>

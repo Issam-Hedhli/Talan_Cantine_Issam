@@ -39,7 +39,7 @@ class SignInActivity : AppCompatActivity() {
                 if(username.text.toString()=="admin" && password.text.toString()=="admin"){
                     //correct
                     Toast.makeText(this,"LOGIN SUCCESSFUL ADMIN", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this,AdminInterface::class.java))
+                    startActivity(Intent(this, AdminInterface::class.java))
                     }
                 else
                     //incorrect

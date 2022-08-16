@@ -1,11 +1,16 @@
 package com.example.talancantine
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.talancantine.FragmentUser.FirstFragmentUser
+import com.example.talancantine.FragmentUser.FourthFragmentUser
+import com.example.talancantine.FragmentUser.SecondFragmentUser
+import com.example.talancantine.FragmentUser.ThirdFragmentUser
 import com.example.talancantine.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.item_rv_main_menus.*
+import kotlinx.android.synthetic.main.fragment_first_user.*
 
 class MainActivity : AppCompatActivity() {
     private val homefragment = FirstFragmentUser()
@@ -23,6 +28,8 @@ class MainActivity : AppCompatActivity() {
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         replaceFragment(homefragment)
+
+
 
 
 

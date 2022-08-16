@@ -31,7 +31,8 @@ class SignUpActivity : AppCompatActivity() {
         setContentView(binding.root)
         val username = findViewById<TextView>(R.id.username)
         val email = findViewById<TextView>(R.id.email)
-        val password = findViewById<TextView>(R.id.password)
+        val password = findViewById<TextView>(R.id.passwordSignUp)
+        val password_confirm=findViewById<TextView>(R.id.password_confirm)
         val registerbtn = findViewById<MaterialButton>(R.id.registerbtn)
 
 
@@ -52,19 +53,26 @@ class SignUpActivity : AppCompatActivity() {
 
         registerbtn.setOnClickListener {
 
-            if(username.text.toString()!="" &&
-                isValidEmail(email.text.toString()) &&
-                password.text.toString()!="" &&
-                password_confirm.text.toString()==password.text.toString()
+            //incorrect
 
-            ){
-                //correct
-                Toast.makeText(this,"ACCOUNT CREATED", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this,SignInActivity::class.java))
+            if(username.text.toString()==""){
+                Toast.makeText(this,"USERNAME FAILED!!!", Toast.LENGTH_SHORT).show()
+            }else
+                if (!isValidEmail(email.text.toString())){
+                Toast.makeText(this,"EMAIL FAILED!!!", Toast.LENGTH_SHORT).show()
+            }else
+                if (password.text.toString()==""){
+                Toast.makeText(this,"PASSWORD FAILED!!!", Toast.LENGTH_SHORT).show()
+            }else
+                if (password_confirm.text.toString()!=password.text.toString()) {
+                Toast.makeText(this, "CONFIRM PASSWORD FAILED!!!", Toast.LENGTH_SHORT).show()
             }
-            else
-                //incorrect
-                Toast.makeText(this,"FAILED!!!", Toast.LENGTH_SHORT).show()
+
+            //correct
+            else {
+                Toast.makeText(this,"ACCOUNT CREATED", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this,MainActivity::class.java))
+            }
         }
     }
 

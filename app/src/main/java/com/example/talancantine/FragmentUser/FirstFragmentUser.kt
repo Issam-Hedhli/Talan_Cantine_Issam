@@ -1,5 +1,6 @@
-package com.example.talancantine
+package com.example.talancantine.FragmentUser
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.talancantine.DetailActivity
+import com.example.talancantine.R
 import com.example.talancantine.adapter.RecyclerAdapterCategory
 import com.example.talancantine.adapter.RecyclerAdapterMenus
 import com.example.talancantine.databinding.FragmentFirstUserBinding
@@ -33,6 +36,7 @@ class FirstFragmentUser : Fragment() {
         // Inflate the layout for this fragment
 
           _binding= FragmentFirstUserBinding.inflate(inflater, container, false)
+
         return binding.root
     }
 

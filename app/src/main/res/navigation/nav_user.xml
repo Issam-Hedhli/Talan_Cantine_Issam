@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/firstFragmentUser"
-        android:name="com.example.talancantine.FirstFragmentUser"
+        android:name="com.example.talancantine.FragmentUser.FirstFragmentUser"
         android:label="fragment_first_user"
         tools:layout="@layout/fragment_first_user" />
     <fragment
         android:id="@+id/secondFragmentUser"
-        android:name="com.example.talancantine.SecondFragmentUser"
+        android:name="com.example.talancantine.FragmentUser.SecondFragmentUser"
         android:label="fragment_second_user"
         tools:layout="@layout/fragment_second_user" />
     <fragment
         android:id="@+id/thirdFragmentUser"
-        android:name="com.example.talancantine.ThirdFragmentUser"
+        android:name="com.example.talancantine.FragmentUser.ThirdFragmentUser"
         android:label="fragment_third_user"
         tools:layout="@layout/fragment_third_user" />
     <fragment
         android:id="@+id/fourthFragmentUser"
-        android:name="com.example.talancantine.FourthFragmentUser"
+        android:name="com.example.talancantine.FragmentUser.FourthFragmentUser"
         android:label="fragment_fourth_user"
         tools:layout="@layout/fragment_fourth_user" />
 </navigation>

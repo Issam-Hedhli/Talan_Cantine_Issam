@@ -1,12 +1,10 @@
-package com.example.talancantine
+package com.example.talancantine.FragmentUser
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.RecyclerView
-import com.example.talancantine.adapter.RecyclerAdapterMenus
 import com.example.talancantine.databinding.FragmentThirdUserBinding
 
 
