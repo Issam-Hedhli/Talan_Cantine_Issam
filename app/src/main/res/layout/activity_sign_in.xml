@@ -24,7 +24,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/usernameSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/signin"
@@ -43,10 +43,10 @@
         android:textColorHint="@color/white" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/passwordSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/username"
+        android:layout_below="@id/usernameSignIn"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
 
@@ -67,8 +67,8 @@
         android:id="@+id/ivShowHidePass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/password"
-        android:layout_alignEnd="@+id/password"
+        android:layout_alignTop="@+id/passwordSignIn"
+        android:layout_alignEnd="@+id/passwordSignIn"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="22dp"
@@ -76,10 +76,10 @@
         android:src="@drawable/ic_visibility_off" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/loginbtn"
+        android:id="@+id/loginbtnSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/password"
+        android:layout_below="@id/passwordSignIn"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
         android:fontFamily="monospace"
@@ -94,7 +94,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/forgotpass"
-        android:layout_below="@id/loginbtn"
+        android:layout_below="@id/loginbtnSignIn"
         android:text="Forgot password?"
         android:fontFamily="monospace"
 

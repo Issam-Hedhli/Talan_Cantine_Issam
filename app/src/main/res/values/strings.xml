@@ -38,4 +38,7 @@
     <string name="description_favoris">L\'ajout de plat aux favoris vous permet d\'y accéder rapidement
     et vous fait gagner du temps lorsque vous souhaitez commander à nouveau ou les enregistrer pour plus tard
     </string>
+    <string name="description_detail">is a dish of Italian origin consisting of a usually round, flat base of
+        leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients
+        (such as various types of sausage, anchovies, mushrooms, onions, olives, vegetables, meat, ham, etc.)</string>
 </resources>

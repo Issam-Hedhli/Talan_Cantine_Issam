@@ -11,19 +11,19 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.talancantine.R
+import com.example.talancantine.databinding.FragmentFirstBinding
+import kotlinx.android.synthetic.main.fragment_first.*
 
 class FirstFragment : Fragment() {
+    private var _binding: FragmentFirstBinding? = null
+    private val  binding get() = _binding!!
 
-    lateinit var imageView: ImageView
-    lateinit var button: Button
     private val pickImage = 100
     private var imageUri: Uri? = null
 
     override fun onResume() {
         super.onResume()
-        imageView = requireView().findViewById(R.id.imagePlat)
-        button = requireView().findViewById(R.id.buttonAjouter)
-        button.setOnClickListener {
+        buttonAjouter.setOnClickListener {
 
             val gallery = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
             startActivityForResult(gallery, pickImage)
@@ -33,7 +33,7 @@ class FirstFragment : Fragment() {
             super.onActivityResult(requestCode, resultCode, data)
             if (resultCode == AppCompatActivity.RESULT_OK && requestCode == pickImage) {
                 imageUri = data?.data
-                imageView.setImageURI(imageUri)
+                imagePlat.setImageURI(imageUri)
             }
 
 
@@ -49,17 +49,17 @@ class FirstFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_first, container, false)
+        _binding= FragmentFirstBinding.inflate(inflater, container, false)
+
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
         //spinner
         val categories = resources.getStringArray(R.array.categories)
-        val spinner = view.findViewById<Spinner>(R.id.spinner_categorie)
-        if (spinner != null) {
+        if (spinner_categorie != null) {
             val adapter = activity?.let {
                 ArrayAdapter<String>(
                     it,
@@ -67,9 +67,9 @@ class FirstFragment : Fragment() {
                     categories
                 )
             }
-            spinner.adapter = adapter
+            spinner_categorie.adapter = adapter
 
-            spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            spinner_categorie.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
                     Toast.makeText(
                         context,
@@ -88,10 +88,15 @@ class FirstFragment : Fragment() {
 
 
 
+        buttonValiderplat.setOnClickListener {
+            Toast.makeText(context,"DISH CREATED", Toast.LENGTH_SHORT).show()
+
+        }
 
 
 
-        }}
+        }
+}
 
 
 

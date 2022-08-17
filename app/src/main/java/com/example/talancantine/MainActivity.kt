@@ -9,6 +9,7 @@ import com.example.talancantine.FragmentUser.FourthFragmentUser
 import com.example.talancantine.FragmentUser.SecondFragmentUser
 import com.example.talancantine.FragmentUser.ThirdFragmentUser
 import com.example.talancantine.databinding.ActivityMainBinding
+import com.example.talancantine.databinding.FragmentSecondUserBinding
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_first_user.*
 
@@ -31,9 +32,6 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
-
-
         bottomNavigationView.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.firstFragmentUser ->replaceFragment(homefragment)
@@ -45,11 +43,10 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+        
+    }
 
-
-        }
-
-    private fun replaceFragment(fragment: Fragment) {
+    fun replaceFragment(fragment: Fragment) {
         if (fragment != null) {
             val transaction = supportFragmentManager.beginTransaction()
             transaction.replace(R.id.frame_layout, fragment)

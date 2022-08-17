@@ -11,12 +11,12 @@ import com.example.talancantine.R
 class SecondFragmentUser : Fragment() {
 
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
         // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_second_user, container, false)
     }
 

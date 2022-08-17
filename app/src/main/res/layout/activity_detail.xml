@@ -21,9 +21,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="60dp"
-                android:text="Title"
+                android:text="Pizza"
                 android:textAlignment="center"
-                android:textColor="@color/black"
+                android:textColor="@color/purple_500"
+                android:fontFamily="monospace"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -31,9 +32,10 @@
                 android:id="@+id/tv_price_plat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="D"
+                android:text="15 D"
+                android:textColor="@color/purple_500"
+                android:fontFamily="monospace"
                 android:textAlignment="center"
-                android:textColor="@color/black"
                 android:textSize="24sp" />
 
             <ImageView
@@ -81,6 +83,10 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/description_detail"/>
 
         </LinearLayout>
     </ScrollView>

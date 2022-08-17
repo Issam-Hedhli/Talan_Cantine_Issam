@@ -94,17 +94,16 @@
             android:textStyle="bold" />
 
 
-
         <Spinner
             android:id="@+id/spinner_categorie"
             style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
-            android:spinnerMode="dropdown"
             android:layout_width="350dp"
-            android:fontFamily="monospace"
-
+            android:layout_height="90dp"
             android:layout_gravity="center"
-            android:layout_height="69dp"
+
             android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:spinnerMode="dropdown"
             tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
@@ -152,9 +151,8 @@
         <ImageView
             android:id="@+id/imagePlat"
             android:layout_width="match_parent"
-            android:layout_height="177dp"
-            android:visibility="visible"
-            android:layout_weight="1" />
+            android:layout_height="200dp"
+             />
 
         <Button
             android:id="@+id/buttonValiderplat"

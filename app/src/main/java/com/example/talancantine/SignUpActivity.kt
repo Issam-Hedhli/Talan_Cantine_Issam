@@ -1,21 +1,16 @@
 package com.example.talancantine
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
-import android.widget.Toast
-import com.example.talancantine.databinding.ActivitySignInBinding
-import com.example.talancantine.databinding.ActivitySignUpBinding
-import com.google.android.material.button.MaterialButton
-import kotlinx.android.synthetic.main.activity_sign_up.*
 import android.text.TextUtils
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
 import android.util.Patterns
-import android.view.MotionEvent
-import android.view.View
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.example.talancantine.databinding.ActivitySignUpBinding
 import kotlinx.android.synthetic.main.activity_sign_in.*
+import kotlinx.android.synthetic.main.activity_sign_up.*
 
 
 class SignUpActivity : AppCompatActivity() {
@@ -29,12 +24,6 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val username = findViewById<TextView>(R.id.username)
-        val email = findViewById<TextView>(R.id.email)
-        val password = findViewById<TextView>(R.id.passwordSignUp)
-        val password_confirm=findViewById<TextView>(R.id.password_confirm)
-        val registerbtn = findViewById<MaterialButton>(R.id.registerbtn)
-
 
         ivShowHidePassSignUp.setOnClickListener {
             mIsShowPass = !mIsShowPass
@@ -51,20 +40,20 @@ class SignUpActivity : AppCompatActivity() {
         showConfirmPassword(mIsShowPass)
 
 
-        registerbtn.setOnClickListener {
+        registerbtnSignUp.setOnClickListener {
 
             //incorrect
 
-            if(username.text.toString()==""){
+            if(usernameSignUp.text.toString()==""){
                 Toast.makeText(this,"USERNAME FAILED!!!", Toast.LENGTH_SHORT).show()
             }else
                 if (!isValidEmail(email.text.toString())){
                 Toast.makeText(this,"EMAIL FAILED!!!", Toast.LENGTH_SHORT).show()
             }else
-                if (password.text.toString()==""){
+                if (passwordSignUp.text.toString()==""){
                 Toast.makeText(this,"PASSWORD FAILED!!!", Toast.LENGTH_SHORT).show()
             }else
-                if (password_confirm.text.toString()!=password.text.toString()) {
+                if (password_confirm.text.toString()!=passwordSignUp.text.toString()) {
                 Toast.makeText(this, "CONFIRM PASSWORD FAILED!!!", Toast.LENGTH_SHORT).show()
             }
 

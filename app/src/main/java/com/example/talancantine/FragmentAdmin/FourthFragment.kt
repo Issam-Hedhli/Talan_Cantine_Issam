@@ -61,6 +61,11 @@ class FourthFragment : Fragment() {
             }, getDate.get(Calendar.YEAR), getDate.get(Calendar.MONTH), getDate.get(Calendar.DAY_OF_MONTH))
             datepicker.show()
         })
+
+        buttonValidermenu.setOnClickListener {
+            Toast.makeText(context,"MENU UPDATED", Toast.LENGTH_SHORT).show()
+
+        }
     }
     }
 
