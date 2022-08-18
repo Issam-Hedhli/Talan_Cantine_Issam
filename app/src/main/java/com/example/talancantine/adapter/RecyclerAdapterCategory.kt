@@ -25,7 +25,7 @@ class RecyclerAdapterCategory:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
 
     inner class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
-        var itemImage: ImageView
+        var itemImage:ImageView
         var itemTitle:TextView
 
 

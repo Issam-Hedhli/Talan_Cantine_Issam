@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/iv_item_cart"
@@ -14,11 +15,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019"
         app:srcCompat="@drawable/pop_1" />
 
     <TextView
         android:id="@+id/tv_Title_cart"
         android:layout_width="wrap_content"
+        android:fontFamily="monospace"
         android:layout_height="wrap_content"
         android:text="Title"
         android:layout_marginTop="16dp"
@@ -37,9 +40,73 @@
         app:srcCompat="@drawable/minus" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/NumberItemtxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/minusCartBtn" />
+        android:text="1"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/minusCartBtn"
+        app:layout_constraintStart_toEndOf="@+id/minusCartBtn"
+        app:layout_constraintTop_toTopOf="@+id/minusCartBtn" />
+
+    <ImageView
+        android:id="@+id/addCartBtn"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/minusCartBtn"
+        app:layout_constraintStart_toEndOf="@+id/NumberItemtxt"
+        app:layout_constraintTop_toTopOf="@+id/NumberItemtxt"
+        app:srcCompat="@drawable/add" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_Title_cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@+id/tv_Title_cart"/>
+
+    <TextView
+        android:id="@+id/prize_each_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/prize_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/minusCartBtn"
+        app:layout_constraintEnd_toEndOf="@id/prize_each_item"
+        app:layout_constraintTop_toTopOf="@+id/minusCartBtn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/prize_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/prize_total" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

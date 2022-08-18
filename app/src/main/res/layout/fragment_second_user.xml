@@ -30,7 +30,11 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_cart"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_rv_cart"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                tools:itemCount="1">
 
             </androidx.recyclerview.widget.RecyclerView>
 

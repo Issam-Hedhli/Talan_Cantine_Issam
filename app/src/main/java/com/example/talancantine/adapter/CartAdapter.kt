@@ -10,8 +10,9 @@ import com.example.talancantine.R
 
 class CartAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-    private var titles= arrayListOf("PIZZA","BURGER","SANDWICH","DRINKS ")
-    private var images= intArrayOf(R.drawable.pizza, R.drawable.burger, R.drawable.sandwich, R.drawable.drink)
+    private var titles= arrayListOf("PIZZA","BURGER","PIZZA")
+    private var images= intArrayOf(R.drawable.pop_1, R.drawable.pop_2, R.drawable.pop_3)
+    private var numbersItem= arrayListOf("1","3","2")
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_rv_cart,parent,false)
@@ -19,8 +20,10 @@ class CartAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        holder.itemView.findViewById<TextView>(R.id.tv_dish_name).text=titles[position]
-        holder.itemView.findViewById<ImageView>(R.id.img_dish).setImageResource(images[position])
+        holder.itemView.findViewById<TextView>(R.id.tv_Title_cart).text=titles[position]
+        holder.itemView.findViewById<ImageView>(R.id.iv_item_cart).setImageResource(images[position])
+        holder.itemView.findViewById<TextView>(R.id.NumberItemtxt).text=numbersItem[position]
+
     }
 
     override fun getItemCount(): Int {
@@ -30,11 +33,13 @@ class CartAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     inner class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         var itemImage: ImageView
         var itemTitle: TextView
+        var itemNumber:TextView
 
 
         init {
-            itemImage=itemView.findViewById(R.id.img_dish)
-            itemTitle=itemView.findViewById(R.id.tv_dish_name)
+            itemImage=itemView.findViewById(R.id.iv_item_cart)
+            itemTitle=itemView.findViewById(R.id.tv_Title_cart)
+            itemNumber=itemView.findViewById(R.id.NumberItemtxt)
 
 
         }

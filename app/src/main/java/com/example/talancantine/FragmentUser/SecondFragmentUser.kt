@@ -8,16 +8,17 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.talancantine.adapter.CartAdapter
-import com.example.talancantine.adapter.RecyclerAdapterCategory
 import com.example.talancantine.databinding.FragmentSecondUserBinding
 import kotlinx.android.synthetic.main.fragment_second_user.*
 
 
 class SecondFragmentUser : Fragment() {
-    private lateinit var binding: FragmentSecondUserBinding
+    private lateinit var _binding: FragmentSecondUserBinding
+    private val binding get() = _binding!!
 
     private var adapterCart: CartAdapter?= null
     private var linearLayoutManagerCart: RecyclerView.LayoutManager?=null
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,14 +26,15 @@ class SecondFragmentUser : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
 
-        binding= FragmentSecondUserBinding.inflate(inflater, container, false)
+        _binding= FragmentSecondUserBinding.inflate(inflater, container, false)
 
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        linearLayoutManagerCart= LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+
+        linearLayoutManagerCart= LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         rv_cart.layoutManager=linearLayoutManagerCart
 
         adapterCart= CartAdapter()
@@ -40,4 +42,7 @@ class SecondFragmentUser : Fragment() {
 
     }
 
+
 }
+
+
