@@ -1,16 +1,14 @@
 package com.example.talancantine.FragmentUser
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.talancantine.R
+import com.example.talancantine.DetailActivity
 import com.example.talancantine.adapter.RecyclerAdapterCategory
 import com.example.talancantine.adapter.RecyclerAdapterMenus
 import com.example.talancantine.databinding.FragmentFirstUserBinding
@@ -58,8 +56,9 @@ class FirstFragmentUser : Fragment() {
         rv_main_menus.adapter=adapterMenus
 
 
-
-
+        categories.setOnClickListener {
+            startActivity(Intent(context,DetailActivity::class.java))
+        }
 
     }
 

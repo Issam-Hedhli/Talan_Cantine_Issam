@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    tools:context=".FragmentUser.SecondFragmentUser">
 
     <ImageView
         android:id="@+id/iv_item_cart"
@@ -40,7 +41,7 @@
         app:srcCompat="@drawable/minus" />
 
     <TextView
-        android:id="@+id/NumberItemtxt"
+        android:id="@+id/numberItemtxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1"
@@ -58,8 +59,8 @@
         android:layout_height="28dp"
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/minusCartBtn"
-        app:layout_constraintStart_toEndOf="@+id/NumberItemtxt"
-        app:layout_constraintTop_toTopOf="@+id/NumberItemtxt"
+        app:layout_constraintStart_toEndOf="@+id/numberItemtxt"
+        app:layout_constraintTop_toTopOf="@+id/numberItemtxt"
         app:srcCompat="@drawable/add" />
 
     <TextView

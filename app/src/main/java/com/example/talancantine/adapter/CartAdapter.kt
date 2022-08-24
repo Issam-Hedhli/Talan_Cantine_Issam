@@ -22,7 +22,7 @@ class CartAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         holder.itemView.findViewById<TextView>(R.id.tv_Title_cart).text=titles[position]
         holder.itemView.findViewById<ImageView>(R.id.iv_item_cart).setImageResource(images[position])
-        holder.itemView.findViewById<TextView>(R.id.NumberItemtxt).text=numbersItem[position]
+        holder.itemView.findViewById<TextView>(R.id.numberItemtxt).text=numbersItem[position]
 
     }
 
@@ -39,7 +39,7 @@ class CartAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         init {
             itemImage=itemView.findViewById(R.id.iv_item_cart)
             itemTitle=itemView.findViewById(R.id.tv_Title_cart)
-            itemNumber=itemView.findViewById(R.id.NumberItemtxt)
+            itemNumber=itemView.findViewById(R.id.numberItemtxt)
 
 
         }
